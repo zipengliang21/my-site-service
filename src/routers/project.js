@@ -89,7 +89,7 @@ router.get('/projects', async (req, res) => {
             },
                {
                   title: "My-Site",
-                  brief: "About this website, and what makes it awesome",
+                  brief: "About this personal website, and what makes it awesome",
                   descriptions: [
                      "- Built a personal website to introduce myself and showcase my projects",
                      "Highlights:",
