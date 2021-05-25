@@ -66,6 +66,23 @@ router.get('/projects/:id', async (req, res) => {
              },
          )
          break;
+      case 4:
+         res.json(
+             {
+                "title": "Gomoku (Board Game)",
+                "brief": "A board game for 2 players",
+                "descriptions": [
+                   "- Developed multiplayer board game in Java that can run multiple games simultaneously",
+                   "- Implementing runnable interface and connected players with the game server by using Socket Java class",
+                   "- Created GUI using Java Swing to record the state of the game including winner and steps taken by the users ",
+                   "",
+                   ""
+                ],
+                "preview": "",
+                "sourceCode": "https://github.com/zipengliang21/Gomoku",
+                "id": 4
+             },
+         )
    }
 })
 
@@ -75,7 +92,8 @@ router.get('/projects/:id', async (req, res) => {
 router.get('/projects', async (req, res) => {
    // res.setHeader('Access-Control-Allow-Origin', config.get('setHeader.ui'));git r
          res.json(
-            [             {
+            [
+                {
                title: "Morney",
                brief: "A simple web app for recording your expense and income",
                descriptions: [
@@ -118,7 +136,22 @@ router.get('/projects', async (req, res) => {
                   preview: "",
                   sourceCode: "https://github.com/zipengliang21/Rate-My-Restaurant",
                   id: 3
-               },]
+               },
+               {
+                  "title": "Gomoku (Board Game)",
+                  "brief": "A board game for 2 players",
+                  "descriptions": [
+                     "- Developed multiplayer board game in Java that can run multiple games simultaneously",
+                     "- Implementing runnable interface and connected players with the game server by using Socket Java class",
+                     "- Created GUI using Java Swing to record the state of the game including winner and steps taken by the users ",
+                     "",
+                     ""
+                  ],
+                  "preview": "",
+                  "sourceCode": "https://github.com/zipengliang21/Gomoku",
+                  "id": 4
+               }
+               ]
          )
 })
 
